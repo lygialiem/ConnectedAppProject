@@ -13,6 +13,7 @@
 		E72932A8226DE3BE00E8F9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72932A6226DE3BE00E8F9E5 /* Main.storyboard */; };
 		E72932AA226DE3BF00E8F9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72932A9226DE3BF00E8F9E5 /* Assets.xcassets */; };
 		E72932AD226DE3BF00E8F9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72932AB226DE3BF00E8F9E5 /* LaunchScreen.storyboard */; };
+		E7D6C6D7226E033A00521BF5 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7D6C6D5226E033900521BF5 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		E72932A9226DE3BF00E8F9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E72932AC226DE3BF00E8F9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E72932AE226DE3BF00E8F9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D6C6D5226E033900521BF5 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		E7D6C6D8226E035500521BF5 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		E7D6C6D9226E036200521BF5 /* SMACKAPP-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SMACKAPP-Bridging-Header.h"; sourceTree = "<group>"; };
 		E97DC4AC7B96E6903F794051 /* Pods-SMACKAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMACKAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SMACKAPP/Pods-SMACKAPP.debug.xcconfig"; sourceTree = "<group>"; };
 		FA979E2E77597F0A95B4BD76 /* Pods-SMACKAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SMACKAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-SMACKAPP/Pods-SMACKAPP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,6 +64,7 @@
 		E7293296226DE3BE00E8F9E5 = {
 			isa = PBXGroup;
 			children = (
+				E7D6C6CD226E01E200521BF5 /* Supporting Files */,
 				E72932A1226DE3BE00E8F9E5 /* SMACKAPP */,
 				E72932A0226DE3BE00E8F9E5 /* Products */,
 				8DD1A41E594F14067285A5E8 /* Pods */,
@@ -86,6 +91,16 @@
 				E72932AE226DE3BF00E8F9E5 /* Info.plist */,
 			);
 			path = SMACKAPP;
+			sourceTree = "<group>";
+		};
+		E7D6C6CD226E01E200521BF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7D6C6D8226E035500521BF5 /* SWRevealViewController.h */,
+				E7D6C6D5226E033900521BF5 /* SWRevealViewController.m */,
+				E7D6C6D9226E036200521BF5 /* SMACKAPP-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +137,7 @@
 				TargetAttributes = {
 					E729329E226DE3BE00E8F9E5 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -208,6 +224,7 @@
 			files = (
 				E72932A5226DE3BE00E8F9E5 /* ViewController.swift in Sources */,
 				E72932A3226DE3BE00E8F9E5 /* AppDelegate.swift in Sources */,
+				E7D6C6D7226E033A00521BF5 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,8 +371,9 @@
 			baseConfigurationReference = E97DC4AC7B96E6903F794051 /* Pods-SMACKAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56G8LHHBBK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SMACKAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -363,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LGL.SMACKAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "New Group/SMACKAPP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,8 +393,9 @@
 			baseConfigurationReference = FA979E2E77597F0A95B4BD76 /* Pods-SMACKAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 56G8LHHBBK;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SMACKAPP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,6 +403,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LGL.SMACKAPP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "New Group/SMACKAPP-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
