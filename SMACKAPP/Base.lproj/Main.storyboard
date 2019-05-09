@@ -32,8 +32,8 @@
         <!--ChannelVC-->
         <scene sceneID="7yM-CX-QgI">
             <objects>
-                <viewController id="vZE-ty-dMP" customClass="ChannelVC" customModule="SMACKAPP" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="akt-5X-91n" customClass="GradientView" customModule="SMACKAPP" customModuleProvider="target">
+                <viewController id="vZE-ty-dMP" customClass="ChannelVC" customModule="Connected" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="akt-5X-91n" customClass="GradientView" customModule="Connected" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -60,7 +60,7 @@
                                 <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChannelCell" rowHeight="60" id="lB9-Uh-7pi" customClass="ChannelCell" customModule="SMACKAPP" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChannelCell" rowHeight="60" id="lB9-Uh-7pi" customClass="ChannelCell" customModule="Connected" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lB9-Uh-7pi" id="2U8-Nc-dyc">
@@ -194,12 +194,12 @@
         <!--LoginVC-->
         <scene sceneID="oGI-zU-gFU">
             <objects>
-                <viewController id="9mJ-ZW-tas" customClass="LoginVC" customModule="SMACKAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9mJ-ZW-tas" customClass="LoginVC" customModule="Connected" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xcQ-QF-2Gz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-X7-myX" customClass="GradientView" customModule="SMACKAPP" customModuleProvider="target">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-X7-myX" customClass="GradientView" customModule="Connected" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.23183268308639526" green="0.23884129524230957" blue="0.25490224361419678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -218,7 +218,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gR-KP-cQR" customClass="RoundedButton" customModule="SMACKAPP" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gR-KP-cQR" customClass="RoundedButton" customModule="Connected" customModuleProvider="target">
                                 <rect key="frame" x="64" y="269" width="247" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98126524690000005" green="0.98137527700000005" blue="0.98120182749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -299,7 +299,7 @@
         <!--Create AccountVC-->
         <scene sceneID="HFo-JG-xfk">
             <objects>
-                <viewController id="Wlw-ha-EKA" customClass="CreateAccountVC" customModule="SMACKAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wlw-ha-EKA" customClass="CreateAccountVC" customModule="Connected" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Gk-mV-kOg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -337,7 +337,7 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmy-Er-Lhf" customClass="RoundedButton" customModule="SMACKAPP" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmy-Er-Lhf" customClass="RoundedButton" customModule="Connected" customModuleProvider="target">
                                 <rect key="frame" x="64" y="525" width="247" height="25"/>
                                 <color key="backgroundColor" red="0.98126524690000005" green="0.98137527700000005" blue="0.98120182749999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -360,7 +360,7 @@
                                 <rect key="frame" x="177.5" y="223.5" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xM-2Y-gBO" customClass="GradientView" customModule="SMACKAPP" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2xM-2Y-gBO" customClass="GradientView" customModule="Connected" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SMACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMB-Rz-U1a">
@@ -386,7 +386,7 @@
                             <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LhF-4s-eJP">
                                 <rect key="frame" x="127.5" y="309" width="120" height="147"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Brw-WX-mZx" customClass="RoundedImage" customModule="SMACKAPP" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="Brw-WX-mZx" customClass="RoundedImage" customModule="Connected" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="9BN-HN-LKE"/>
@@ -463,7 +463,7 @@
         <!--Avatar PickerVC-->
         <scene sceneID="hVN-Fm-Qhx">
             <objects>
-                <viewController id="shs-3O-26W" customClass="AvatarPickerVC" customModule="SMACKAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="shs-3O-26W" customClass="AvatarPickerVC" customModule="Connected" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oWS-dd-ppb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,7 +479,7 @@
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="AvatarCellID" id="n4W-2Y-c6c" customClass="AvatarCell" customModule="SMACKAPP" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="AvatarCellID" id="n4W-2Y-c6c" customClass="AvatarCell" customModule="Connected" customModuleProvider="target">
                                         <rect key="frame" x="10" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -536,12 +536,12 @@
         <!--ChatVC-->
         <scene sceneID="2RL-je-fgX">
             <objects>
-                <viewController id="kZD-qw-p1g" customClass="ChatVC" customModule="SMACKAPP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="kZD-qw-p1g" customClass="ChatVC" customModule="Connected" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="30n-Qc-bTB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOv-eR-iYu" customClass="GradientView" customModule="SMACKAPP" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MOv-eR-iYu" customClass="GradientView" customModule="Connected" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2z-34-Rgq">
@@ -582,14 +582,14 @@
                                 <rect key="frame" x="0.0" y="60" width="375" height="551"/>
                                 <color key="backgroundColor" red="0.99993699790000001" green="1" blue="0.99987250569999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" restorationIdentifier="MessageCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="95" id="Inm-MG-jvW" customClass="MessageCell" customModule="SMACKAPP" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFill" restorationIdentifier="MessageCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageCell" rowHeight="95" id="Inm-MG-jvW" customClass="MessageCell" customModule="Connected" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Inm-MG-jvW" id="Hif-CL-gSu">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xp4-tc-IlS" customClass="RoundedImage" customModule="SMACKAPP" customModuleProvider="target">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xp4-tc-IlS" customClass="RoundedImage" customModule="Connected" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="10" width="60" height="60"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
