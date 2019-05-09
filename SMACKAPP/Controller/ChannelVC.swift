@@ -22,7 +22,9 @@ class ChannelVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         
-        self.revealViewController().rearViewRevealWidth = self.view.frame.width - 60
+    self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        self.revealViewController().rearViewRevealWidth = self.view.frame.width
         self.avatarLogin.layer.cornerRadius = self.avatarLogin.frame.width / 2
         self.loginBtn.titleLabel?.numberOfLines = 3
         
@@ -110,6 +112,7 @@ class ChannelVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected")
         let channel = MessageServices.instance.channels[indexPath.row]
         MessageServices.instance.selectedChannel = channel
         self.revealViewController()?.revealToggle(animated: true)

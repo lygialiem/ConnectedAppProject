@@ -17,6 +17,8 @@ class MessageServices {
     var selectedChannel: Channel?
     var messages = [Message]()
     
+    var profileUser: Message?
+    
     func findAllChannel(completion: @escaping CompletionHandler){
         
         Alamofire.request("http://smacksmackchatapp.herokuapp.com/v1/channel", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header_header).responseJSON { (response) in

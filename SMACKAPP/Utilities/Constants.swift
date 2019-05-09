@@ -24,6 +24,7 @@ let USER_EMAIL: String = "userEmail"
 let purpleColorForTextfield: UIColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChangedfromCreateAccountVC")
 let NOTIF_CHANNEL_SELECTED = Notification.Name("Did Select Channel and Notify to ChatVC")
+let NOTIF_PROFILE_USER = Notification.Name("Profile User Selected")
 
 let header_header = [
     "Authorization": "Bearer \(AuthService.instance.authToken)",

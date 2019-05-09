@@ -21,6 +21,9 @@ class ProfileVCViewController: UIViewController {
         super.viewDidLoad()
         setupView()
         self.view.layer.cornerRadius = 5
+        
+        
+        
     }
     
     @IBAction func CloseButton(_ sender: Any) {
@@ -44,11 +47,10 @@ class ProfileVCViewController: UIViewController {
         
         let closetap = UITapGestureRecognizer(target: self, action:  #selector(ProfileVCViewController.Closetap(_:)))
         bgView.addGestureRecognizer(closetap)
-        
-        
     }
     
     @objc func Closetap(_ recognize: UITapGestureRecognizer){
         dismiss(animated: true, completion: nil)
     }
+    
 }

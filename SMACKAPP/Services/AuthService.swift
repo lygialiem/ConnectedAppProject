@@ -43,7 +43,7 @@ class AuthService {
     }
     
     
- 
+    
     func registerUser(email: String, password: String, completion: @escaping CompletionHandler){
         
         let lowerCaseEmail = email.lowercased()
@@ -56,31 +56,31 @@ class AuthService {
             "email": lowerCaseEmail,
             "password": password
         ]
-
+        
         Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
             if response.result.error == nil {
                 completion(true)
             } else {
                 completion(false)
                 debugPrint(response.result.error as Any)
-             
+                
             }
         }
     }
     
     
-  
+    
     func loginUser(email: String, password: String, completion: @escaping CompletionHandler){
         let lowerCaseEmail = email.lowercased()
         let header = [
-                "Content-Type": "application/json; charset=utf-8"
-            ]
+            "Content-Type": "application/json; charset=utf-8"
+        ]
         let body: [String: Any] = [
-                "email": lowerCaseEmail,
-                "password": password
-            ]
+            "email": lowerCaseEmail,
+            "password": password
+        ]
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default , headers: header).responseJSON { (response) in
-                
+            
             if response.result.error == nil {
                 guard let data = response.data else {return}
                 do {
@@ -89,15 +89,15 @@ class AuthService {
                     self.authToken = json["token"].stringValue
                     self.isLogginIn = true
                     completion(true)}
-                    catch {return}
+                catch {return}
             } else {
                 completion(false)
                 debugPrint("Lỗi LoginVC/loginUser:  \(response.result.error as Any)")
                 
-               
-                }
+                
             }
         }
+    }
     
     func AddUser(name: String, email: String, avatarName: String, avatarColor: String, completion:  @escaping CompletionHandler){
         
@@ -109,7 +109,7 @@ class AuthService {
             "avatarName": avatarName,
             "avatarColor": avatarColor
         ]
- 
+        
         Alamofire.request("http://smacksmackchatapp.herokuapp.com/v1/user/add", method: .post, parameters: body, encoding: JSONEncoding.default, headers: header_header).responseJSON { (response) in
             if response.result.error == nil {
                 guard let data = response.data else {return}
@@ -153,7 +153,27 @@ class AuthService {
         }
     }
     
-    
+//    func findAllUsersByToken(completion: @escaping CompletionHandler){
+//        Alamofire.request("http://smacksmackchatapp.herokuapp.com/v1/user", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: header_header).responseJSON { (response) in
+//            if response.result.error == nil {
+//                guard let data = response.data else { return }
+//                do { let json = try JSON(data: data).array
+//                    for item in json! {
+//                        let name = item["name"].stringValue
+//                        let email = item["email"].stringValue
+//                        let avatarColor = item["avatarColor"].stringValue
+//                        let avatarName = item["avartarName"].stringValue
+//                        let profileAllUsers = ProfileAllUsers(name: name, avatarColor: avatarColor, avatarName: avatarName, email: email)
+//                        UserDataServices.instance.profileUsers.append(profileAllUsers)
+//                    }
+//                    completion(true)
+//                } catch { return }
+//            } else {
+//                debugPrint("LỖI AUTHSERVICE/FINDALLUSERBYTOKEN: \(response.result.error as Any)")
+//                completion(false)
+//            }
+//        }
+//    }
 }
 
 

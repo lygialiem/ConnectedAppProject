@@ -18,8 +18,6 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableViewChatVC: UITableView!
     @IBOutlet var typingUserLabel: UILabel!
     
-    var sendIsDone = true
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +29,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         self.tableViewChatVC.transform = CGAffineTransform(scaleX: 1, y: -1)
         
         view.bindToKeyboard()
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
         view.addGestureRecognizer(tap)
         
@@ -177,9 +176,9 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBAction func sideMenuPressed(_ sender: Any) {
     }
     
+    
     @IBAction func messageBoxEditing(_ sender: Any) {
         guard let channelId = MessageServices.instance.selectedChannel?.id else { return }
-        
         if textfieldTextBox.text == "" {
             sendButton.isHidden = true
             SocketService.instance.socket.emit("stopType", UserDataServices.instance.name, channelId)
@@ -188,4 +187,19 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             SocketService.instance.socket.emit("startType", UserDataServices.instance.name, channelId)
         }
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let messagerevert = MessageServices.instance.messageRevert(messagearray: MessageServices.instance.messages)
+        let profile = messagerevert[indexPath.row]
+        MessageServices.instance.profileUser = profile
+        performSegue(withIdentifier: "profileselected", sender: nil )
+        
+    }
+    
+    
+    @IBAction func button(_ sender: Any) {
+        performSegue(withIdentifier: "profileselected", sender: nil)
+    }
+    
 }

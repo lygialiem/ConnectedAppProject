@@ -19,6 +19,8 @@ class UserDataServices {
     public private(set) var email = ""
     public private(set) var name = ""
     
+    var profileUsers = [Message]()
+    
     
     func setUserData(id: String, color: String, avatarName: String, email: String, name: String) {
         self.id = id
@@ -79,6 +81,6 @@ class UserDataServices {
         MessageServices.instance.clearMessage()
         
     }
-    
+     
     
 }

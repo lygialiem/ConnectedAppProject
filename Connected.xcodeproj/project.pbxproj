@@ -23,6 +23,7 @@
 		E78062C52272265600C44ABF /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78062C42272265600C44ABF /* AvatarPickerVC.swift */; };
 		E78062C922722ABD00C44ABF /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78062C822722ABD00C44ABF /* AvatarCell.swift */; };
 		E7B4CDB4227311E900098E24 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B4CDB3227311E900098E24 /* RoundedImage.swift */; };
+		E7C2BBF3228434A9006922C1 /* ProfileSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C2BBF2228434A9006922C1 /* ProfileSelected.swift */; };
 		E7D61CD02279EA690001D9B7 /* ProfileVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D61CCE2279EA690001D9B7 /* ProfileVCViewController.swift */; };
 		E7D61CD12279EA690001D9B7 /* ProfileVCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D61CCF2279EA690001D9B7 /* ProfileVCViewController.xib */; };
 		E7D635DC227EEFC500FBED8D /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D635DB227EEFC500FBED8D /* KeyboardBoundView.swift */; };
@@ -58,6 +59,7 @@
 		E78062C42272265600C44ABF /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		E78062C822722ABD00C44ABF /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		E7B4CDB3227311E900098E24 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		E7C2BBF2228434A9006922C1 /* ProfileSelected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSelected.swift; sourceTree = "<group>"; };
 		E7D61CCE2279EA690001D9B7 /* ProfileVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVCViewController.swift; sourceTree = "<group>"; };
 		E7D61CCF2279EA690001D9B7 /* ProfileVCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVCViewController.xib; sourceTree = "<group>"; };
 		E7D635DB227EEFC500FBED8D /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				E78062C42272265600C44ABF /* AvatarPickerVC.swift */,
 				E7D61CCE2279EA690001D9B7 /* ProfileVCViewController.swift */,
 				E7E095EC227B51F3007D8944 /* AddChannelVC.swift */,
+				E7C2BBF2228434A9006922C1 /* ProfileSelected.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				E727FD262270A7A7007A64BE /* RoundedButton.swift in Sources */,
 				E7E095E7227B3222007D8944 /* MessageServices.swift in Sources */,
 				E7D6C6DE226E06F200521BF5 /* ChatVC.swift in Sources */,
+				E7C2BBF3228434A9006922C1 /* ProfileSelected.swift in Sources */,
 				E7D6C6E4226E35EB00521BF5 /* LoginVC.swift in Sources */,
 				E7D6C6E2226E152300521BF5 /* GradientView.swift in Sources */,
 				E7D6C6E6226E3DAC00521BF5 /* CreateAccountVC.swift in Sources */,
