@@ -10,11 +10,20 @@ import UIKit
 
 @IBDesignable
 class GradientView: UIView {
-
-    var topColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-    var botColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
-
-    override func layoutSubviews() {
+        
+    @IBInspectable var topColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1) {
+        didSet {
+            self.setNeedsLayout()
+        }
+    }
+    
+    @IBInspectable var botColor: UIColor = #colorLiteral(red: 0.9999369979, green: 1, blue: 0.9998725057, alpha: 1) {
+        didSet {
+            self.setNeedsLayout()
+        }
+    }
+    
+    override func layoutSubviews(){
         let gradientLayer = CAGradientLayer()
         gradientLayer.colors = [topColor.cgColor, botColor.cgColor]
         gradientLayer.startPoint = CGPoint(x: 0, y: 0)
@@ -23,3 +32,4 @@ class GradientView: UIView {
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
 }
+
